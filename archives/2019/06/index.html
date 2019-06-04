@@ -128,6 +128,17 @@
 
 
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59174808-3"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-59174808-3');
+    }
+  </script>
+
 
 
 
@@ -572,6 +583,36 @@
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'TjvKotcYoqiBm2Cx3PFYnKH0-gzGzoHsz',
+    appKey: 'evLqD7Yc9zxK64XMaPw4l8pj',
+    placeholder: 'Comment here ~',
+    avatar: '/images/avatar.png',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'en' || 'zh-cn'
+  });
+</script>
+
+
 
 
 
